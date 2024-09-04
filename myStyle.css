@@ -1,0 +1,72 @@
+
+body{
+    background-color:lightgray;
+    font-family: "Amita", serif;
+    margin: 40px auto;
+    padding: 0 16px;
+    font-size: 1em;
+    }
+
+
+header{
+                background-color:steelblue;
+                font-family: "Amita", serif;
+                text-align: center;
+                padding-top:30px;
+                height: 100px;
+                width: 50%;
+                font-size:2em;
+                position: absolute;
+                right: 20%;
+            }
+
+#p1{
+    font-size:.7em;
+}
+
+article {
+                background-color:lightskyblue;
+                
+                padding-top:30px;
+               
+                height: 100%;
+                width: 50%;
+                position: absolute;
+                top: 200px;
+                right:20%;
+            }
+
+#p2{
+    font-family: "Amita", serif;
+    padding-left:20px;
+    text-align: left;
+    font-size:1.25em;
+    width:40%;
+
+}
+            
+#Picture {
+                position: relative;
+                width: 15%;
+                left:60%;
+                margin-top:190px;
+            }
+    
+
+@media (max-width:900px){
+    #Picture{
+        
+        position: relative;
+        width: 15%;
+        left:50%;
+        margin-top:170px;
+    }
+    #p2{
+        padding-top:100px;
+        text-align: left;
+        font-size:1.25em;
+        width:90%;
+    
+    }
+
+}
