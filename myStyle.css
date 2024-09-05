@@ -1,13 +1,10 @@
 
 body{
-    background-color:lightgray;
+    background: linear-gradient(0deg, #1847e7 0%, #ffffff 100%); /*https://webcode.tools/css-generator/background-gradient */
     font-family: "Amita", serif;
-    margin: 40px auto;
-    padding: 0 16px;
     font-size: 1em;
+    height: 100vh; /*Got stuck. https://stackoverflow.com/questions/59547744/cannot-get-body-element-to-cover-entire-page */
     }
-
-
 header{
                 background-color:steelblue;
                 font-family: "Amita", serif;
@@ -17,7 +14,7 @@ header{
                 width: 50%;
                 font-size:2em;
                 position: absolute;
-                right: 0%;
+                right: 25%;
             }
 
 #p1{
@@ -33,7 +30,7 @@ article {
                 width: 50%;
                 position: absolute;
                 top: 200px;
-                right:20%;
+                right: 25%;
             }
 
 #p2{
@@ -48,18 +45,20 @@ article {
 #Picture {
                 position: relative;
                 width: 15%;
-                left:60%;
-                margin-top:190px;
+                left:55%;
+                margin-top:220px;
+                box-shadow: -11px 11px 48px 0px #000000; /*https://webcode.tools/css-generator/box-shadow */
             }
     
 
-@media (max-width:900px){
+@media (max-width:768px){   /* I got this form the Responsive Design video. */
     #Picture{
         
         position: relative;
         width: 15%;
-        left:50%;
-        margin-top:170px;
+        left:42%;
+        margin-top:200px;
+        box-shadow: -11px 11px 48px 0px #000000;
     }
     #p2{
         padding-top:100px;
