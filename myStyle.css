@@ -2,70 +2,112 @@
 body{
     background: linear-gradient(0deg, #1847e7 0%, #ffffff 100%); /*https://webcode.tools/css-generator/background-gradient */
     font-family: "Amita", serif;
-    font-size: 1em;
     height: 100vh; /*Got stuck. https://stackoverflow.com/questions/59547744/cannot-get-body-element-to-cover-entire-page */
     }
+
+#wrapper
+{
+    width:70%;
+    margin:auto;
+    min-height: 700px; /*the wrapper was clipping with my image on my extra wide monitor. this may not be an issue when i have more content on the page. */
+}
+
 header{
                 background-color:steelblue;
                 font-family: "Amita", serif;
                 text-align: center;
-                padding-top:30px;
                 height: 100px;
-                width: 50%;
-                font-size:2em;
-                position: absolute;
-                right: 25%;
-            }
-
-#p1{
-    font-size:.7em;
-}
-
-article {
-                background-color:lightskyblue;
+                width: 100%;
                 
-                padding-top:30px;
-               
-                height: 100%;
-                width: 50%;
-                position: absolute;
-                top: 200px;
-                right: 25%;
+
             }
 
+section {
+                background-color:lightskyblue;
+                padding-top:10px;
+                padding-bottom: 30px;
+                height: 100%;
+                width: 100%;
+
+
+            }
+#p1{
+    font-family: "Amita", serif;
+    padding-left:20px;
+    text-align: left;
+    font-size:1.25em;
+    width:40%;                 /*some of this code is now redundant with the media queries. should i keep it in?*/
+}
 #p2{
     font-family: "Amita", serif;
     padding-left:20px;
     text-align: left;
     font-size:1.25em;
     width:40%;
-
-}
+     }
             
 #Picture {
-                position: relative;
-                width: 15%;
-                left:55%;
-                margin-top:220px;
-                box-shadow: -11px 11px 48px 0px #000000; /*https://webcode.tools/css-generator/box-shadow */
+               position: absolute;
+               left: 60%;
+               width: 15%;
+               box-shadow: -11px 11px 48px 0px #000000; /*https://webcode.tools/css-generator/box-shadow */
             }
-    
+#Pic2 {
+               position: absolute;
+               left: 20%;
+               top: 30px;
+               width: 70px;
+}   
 
-@media (max-width:768px){   /* I got this form the Responsive Design video. */
+@media (min-width:480px){   /* mobile */
     #Picture{
-        
-        position: relative;
-        width: 15%;
-        left:42%;
-        margin-top:200px;
-        box-shadow: -11px 11px 48px 0px #000000;
+        left: 45%;
+        width: 100px;
+    }
+    #Pic2{
+        visibility:hidden;
+    }
+    #p1{
+        padding-top: 120px;
+        width:90%;
+    }
+    #p2{ 
+        text-align: center;
+        width:90%;
+        font-size:.75em;
+    }
+}
+@media (min-width:768px){   /* tablet */
+    
+    #Pic2{
+        visibility:visible;
+    }
+    #p1{
+        padding-top:120px;
+        width:90%;
     }
     #p2{
-        padding-top:100px;
+        
+        text-align: right;
+        width:90%;
+        padding-top:40px;
+        font-size:.75em;
+    }
+}
+@media (min-width:992px){   /* desktop */
+    #Picture{
+               position: absolute;
+               left: 60%;
+               width: 15%;
+    }
+    #p1{
+        padding-top: 20px;
+        width:50%;
+    }
+    #p2{
+        padding-left:20px;
         text-align: left;
         font-size:1.25em;
         width:90%;
-    
     }
-
 }
